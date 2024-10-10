@@ -8,6 +8,34 @@ html, body {
     justify-content: center;
 }
 
+.peach1 {
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    z-index: 1;
+}
+
+.peach2 {
+    position: absolute;
+    top: 20%;
+    right: 5%;
+    z-index: 1;
+}
+
+.peach3 {
+    position: absolute;
+    top: 85%;
+    left: 6%;
+    z-index: 1;
+}
+
+.peach4 {
+    position: absolute;
+    top: 75%;
+    right: 10%;
+    z-index: 1;
+}
+
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -20,11 +48,6 @@ html, body {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.title {
-    height: 300px;
-    width: 400px;
 }
 
 .syp {
@@ -49,12 +72,18 @@ html, body {
 
 .email, .password {
     text-align: center;
+    font-size: medium;
     border-radius: 50px;
     border-color: transparent;
     margin-top: 10px;
     margin-bottom: 12px;
     padding: 10px;
     width: calc(100% - 20px);
+    outline: none;
+}
+
+.email:hover, .password:hover {
+    outline: none;
 }
 
 .remember-me {
@@ -88,6 +117,10 @@ html, body {
     margin-bottom: 20px;
 }
 
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
 .new-user-button {
     border-radius: 5px;
     border: none;
@@ -96,5 +129,156 @@ html, body {
     padding: 10px 20px;
     cursor: pointer;
     font-size: 13px;
+}
+
+.new-user-button:hover {
+    color: white;
+    background-color: #FFB9A7;
+}
+
+.card2 {
+    background-color: transparent;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    height: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.name-container {
+    display: flex;
+    width: 115%;
+    justify-content: space-evenly;
+}
+
+.first-name, .last-name {
+    text-align: center;
+    font-size: medium;
+    border-radius: 50px;
+    border-color: transparent;
+    margin-top: 10px;
+    margin-bottom: 12px;
+    padding: 10px;
+    width: calc(40% - 20px);
+    outline: none;
+}
+
+.create-account-button {
+    border-radius: 5px;
+    border: none;
+    background-color: #fd7166;
+    color: white;
+    display: flex;
+    padding: 10px 20px;
+    margin-top: 15px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.create-account-button:hover {
+    background-color: #de5349;
+}
+
+.returning-user-button {
+    border-radius: 5px;
+    border: none;
+    background-color: white;
+    color: grey;
+    padding: 10px 20px;
+    margin-top: 25px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.returning-user-button:hover {
+    color: white;
+    background-color: #FFB9A7;
+}
+
+
+/*tester*/
+/*.new-user-button:focus {*/
+/*    color: white;*/
+/*    background-color: #FFB9A7;*/
+/*}*/
+
+@media (min-width: 1024px) {
+    .title-container {
+        margin-right: 90px;
+    }
+}
+
+@media (max-width: 767px) {
+    .card {
+        background-color: transparent;
+        box-shadow: none;
+        margin-top: 15px;
+    }
+
+    .syp {
+        margin-top: 20px;
+    }
+
+    .email, .password {
+        width: calc(80% - 10px);
+    }
+
+    .remember-me {
+        margin-left: 30px;
+    }
+
+    .card2 {
+        background-color: transparent;
+        box-shadow: none;
+        margin-top: 15px;
+    }
+
+    .name-container {
+        width: 94%;
+    }
+}
+
+@media (max-width: 767px) {
+    .peach1 {
+        position: absolute;
+        top: 2%;
+        left: 5%;
+        z-index: 1;
+    }
+
+    .peach2 {
+        display: none;
+    }
+
+    .peach4 {
+        width: 80px;
+        height: 60px;
+        position: absolute;
+        top: 70%;
+        right: 2%;
+        z-index: 1;
+    }
+}
+
+
+/*start of loading page css*/
+.peach-container {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 767px) {
+    .peach-container img {
+        width: 90px;
+        height: 80px;
+    }
+
+    .hide-peach {
+        display: none;
+    }
 }
 
