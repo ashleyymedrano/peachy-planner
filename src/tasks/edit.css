@@ -1,0 +1,86 @@
+.edit-navigation {
+    font-size: 70px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 50px;
+    left: 60px;
+}
+
+.edit-navigation:hover {
+    cursor: pointer;
+    color: white;
+}
+
+.edit-task-title {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 40px;
+}
+
+.edit-task-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.edit-task {
+    background-color: white;
+    border-radius: 40px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    padding: 8px;
+    width: 400px;
+    height: 100px;
+    margin: 0 20px 20px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.edit-checkbox {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    accent-color: #1b1f26;
+}
+
+.edit-strikethrough{
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.edit-checkbox:checked + span {
+    text-decoration: line-through;
+    color: grey;
+}
+
+.edit-delete-button {
+    border-radius: 20px;
+    border: none;
+    background-color: #fd7166;
+    color: white;
+    padding: 6px 10px;
+    cursor: pointer;
+    font-size: 13px;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+
+.edit-new-task-button {
+    border-radius: 20px;
+    border: none;
+    background-color: #fd7166;
+    color: white;
+    display: flex;
+    padding: 10px 140px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 30px auto;
+}
