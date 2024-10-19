@@ -1,8 +1,8 @@
 import './App.css'
 import { useState } from 'react'
-import title from '/src/assets/title.png'
-import peach1 from '/src/assets/peach1.png'
-import peach2 from '/src/assets/peach2.png'
+import title from '/src/design/title.png'
+import peach1 from '/src/design/peach1.png'
+import peach2 from '/src/design/peach2.png'
 
 function Page() {
     const [isSignUp, setIsSignUp] = useState(false);
