@@ -92,7 +92,10 @@ html, body {
     margin-top: 10px;
     margin-bottom: 30px;
     align-self: flex-start;
+}
 
+.checkbox {
+    accent-color: #1b1f26;
 }
 
 .login-button {
@@ -284,7 +287,16 @@ html, body {
 
 
 
-/*start of tasks page*/
+/*start of lists page*/
+.page-container {
+    margin-top: 150px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 100vh; /*viewport height*/
+}
+
 .navigation {
     font-size: 70px;
     color: white;
@@ -309,16 +321,11 @@ html, body {
     }
 }
 
-.task-container {
+.list-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
-
-@media (max-width: 768px) {
-    .task-container {
-        margin-top: 80px;
-    }
+    margin-top: 90px;
 }
 
 .task {
@@ -336,7 +343,7 @@ html, body {
     position: relative;
 }
 
-.task-number {
+.list-task-number {
     font-size: 25px;
 }
 
@@ -350,25 +357,25 @@ html, body {
     padding-left: 20px;
 }
 
-.edit-button {
+.list-edit-button {
     border-radius: 20px;
     border: none;
     background-color: #fd7166;
     color: white;
-    padding: 6px 20px;
+    padding: 5px 10px;
     cursor: pointer;
     font-size: 13px;
     position: absolute;
     bottom: 20px;
-    right: 110px;
+    right: 90px;
 }
 
-.delete-button {
+.list-delete-button {
     border-radius: 20px;
     border: none;
     background-color: #fd7166;
     color: white;
-    padding: 6px 20px;
+    padding: 5px 10px;
     cursor: pointer;
     font-size: 13px;
     position: absolute;
@@ -398,7 +405,7 @@ html, body {
     }
 }
 
-/*modal for create new list css*/
+/*modal for creating new list css*/
 .modal-new-list {
     text-align: center;
     font-size: 24px;
