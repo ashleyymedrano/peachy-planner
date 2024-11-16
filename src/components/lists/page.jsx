@@ -1,6 +1,7 @@
-import Modal from '/src/lists/modal/modal.jsx';
+import Modal from '/src/components/lists/modal/modal.jsx';
 import {useState} from "react";
 import {useNavigate} from "react-router-dom";
+
 
 function Lists() {
     const [showModal, setShowModal] = useState(false)
@@ -42,7 +43,7 @@ function Lists() {
     return (
         <>
             <div className="navigation">
-                <p>Hello username! </p>
+                <p>Hello Name! </p>
                 <svg xmlns="http://www.w3.org/2000/svg"
                      width="40"
                      height="40"

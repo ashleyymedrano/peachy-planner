@@ -1,5 +1,5 @@
 import peach1 from '/src/design/peach1.png'
-import peach2 from "../design/peach2.png";
+import peach2 from "../../design/peach2.png";
 
 
 function Loading() {
