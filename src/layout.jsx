@@ -2,11 +2,10 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import './globals.css'
-import Page from './page.jsx'
-import Loading from './loading/page.jsx'
-import Lists from "./lists/page.jsx";
-import EditTasks from "./tasks/page.jsx";
-
+import Page from './components/page.jsx'
+import Loading from './components/loading/page.jsx'
+import Lists from "./components/lists/page.jsx";
+import EditTasks from "./components/tasks/page.jsx";
 
 createRoot(document.getElementById('root')).render(
     <StrictMode>
