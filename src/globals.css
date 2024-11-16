@@ -78,7 +78,7 @@ html, body {
     margin-top: 10px;
     margin-bottom: 12px;
     padding: 10px;
-    width: calc(100% - 20px);
+    width: 300px;
     outline: none;
 }
 
@@ -86,17 +86,17 @@ html, body {
     outline: none;
 }
 
-.remember-me {
-    color: black;
-    display: block;
-    margin-top: 10px;
-    margin-bottom: 30px;
-    align-self: flex-start;
-}
+/*.remember-me {*/
+/*    color: black;*/
+/*    display: block;*/
+/*    margin-top: 10px;*/
+/*    margin-bottom: 30px;*/
+/*    align-self: flex-start;*/
+/*}*/
 
-.checkbox {
-    accent-color: #1b1f26;
-}
+/*.checkbox {*/
+/*    accent-color: #1b1f26;*/
+/*}*/
 
 .login-button {
     border-radius: 5px;
@@ -105,6 +105,7 @@ html, body {
     color: white;
     display: flex;
     padding: 10px 20px;
+    margin-top: 20px;
     cursor: pointer;
     font-size: 16px;
 }
@@ -152,23 +153,23 @@ html, body {
     justify-content: center;
 }
 
-.name-container {
-    display: flex;
-    width: 115%;
-    justify-content: space-evenly;
-}
+/*.name-container {*/
+/*    display: flex;*/
+/*    width: 115%;*/
+/*    justify-content: space-evenly;*/
+/*}*/
 
-.first-name, .last-name {
-    text-align: center;
-    font-size: medium;
-    border-radius: 50px;
-    border-color: transparent;
-    margin-top: 10px;
-    margin-bottom: 12px;
-    padding: 10px;
-    width: calc(40% - 20px);
-    outline: none;
-}
+/*.first-name {*/
+/*    text-align: center;*/
+/*    font-size: medium;*/
+/*    border-radius: 50px;*/
+/*    border-color: transparent;*/
+/*    margin-top: 10px;*/
+/*    margin-bottom: 12px;*/
+/*    padding: 10px;*/
+/*    width: calc(87% - 20px);*/
+/*    outline: none;*/
+/*}*/
 
 .create-account-button {
     border-radius: 5px;
@@ -219,20 +220,15 @@ html, body {
     .card {
         background-color: transparent;
         box-shadow: none;
-        margin-top: 15px;
     }
 
     .syp {
         margin-top: 20px;
     }
 
-    .email, .password {
-        width: calc(80% - 10px);
-    }
-
-    .remember-me {
-        margin-left: 30px;
-    }
+    /*.remember-me {*/
+    /*    margin-left: 30px;*/
+    /*}*/
 
     .card2 {
         background-color: transparent;
