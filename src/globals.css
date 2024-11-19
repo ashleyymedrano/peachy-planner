@@ -133,6 +133,7 @@ html, body {
     padding: 10px 20px;
     cursor: pointer;
     font-size: 13px;
+    margin-top: 20px;
 }
 
 .new-user-button:hover {
