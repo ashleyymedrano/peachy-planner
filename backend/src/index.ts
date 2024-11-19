@@ -3,6 +3,7 @@ import dotenv from "dotenv";
 import cors from "cors";
 import morgan from "morgan";
 import userRouter from "./routes/user.route";
+import connectDB from "./config/connectDB";
 
 // Initialize dotenv to access environment variables
 dotenv.config();
@@ -33,7 +34,7 @@ app.get("/", (req: Request, res: Response) => {
 });
 
 // User routes
-app.use("/api/user, userRouter");
+app.use("/api/user", userRouter);
 
 // Unknown route handler
 app.use((req: Request, res: Response) => {
@@ -42,7 +43,7 @@ app.use((req: Request, res: Response) => {
     });
 });
 
-// unknonw route handler
+// unknown route handler
 app.use((req: Request, res: Response) => {
     return res.status(404).json({
         message: "Route not found",
@@ -50,6 +51,7 @@ app.use((req: Request, res: Response) => {
 });
 
 // Start the server
-app.listen(PORT, () => {
+app.listen(PORT, async () => {
     console.log(`Server is running on http://localhost:${PORT}`);
+    await connectDB(); // connect to the database
 });
